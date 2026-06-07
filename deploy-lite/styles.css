@@ -687,25 +687,25 @@ h2 {
   text-align: right;
 }
 
-.preorder-intro .eyebrow,
-.preorder-intro p {
-  color: var(--muted);
-}
-
-.preorder-intro p {
+.preorder-message {
   background: transparent;
   border-inline-start: 6px solid var(--orange);
   border-radius: 0;
   color: var(--ink);
-  font-size: clamp(20px, 2vw, 28px);
-  font-weight: 700;
-  line-height: 1.45;
   margin-top: 22px;
   padding: 6px 18px 6px 0;
 }
 
-.preorder-intro p:last-child {
+.preorder-message p {
   color: var(--ink);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.preorder-message p + p {
+  margin-top: 4px;
 }
 
 .lead-form {
@@ -743,6 +743,33 @@ h2 {
   border-color: var(--orange);
   box-shadow: 0 0 0 4px rgba(255, 106, 19, 0.22);
   outline: none;
+}
+
+.consent-field {
+  align-items: start;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  border-radius: 6px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  padding: 12px 14px;
+}
+
+.consent-field input {
+  accent-color: var(--orange);
+  height: 18px;
+  margin: 2px 0 0;
+  min-height: 0;
+  padding: 0;
+  width: 18px;
+}
+
+.consent-field span {
+  color: rgba(23, 23, 23, 0.76);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.55;
 }
 
 .full-field,
