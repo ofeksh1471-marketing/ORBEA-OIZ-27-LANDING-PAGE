@@ -692,20 +692,27 @@ h2 {
   border-inline-start: 6px solid var(--orange);
   border-radius: 0;
   color: var(--ink);
-  margin-top: 22px;
-  padding: 6px 18px 6px 0;
+  margin-top: 20px;
+  padding: 4px 18px 4px 0;
 }
 
 .preorder-message p {
   color: var(--ink);
-  font-size: clamp(20px, 2vw, 28px);
-  font-weight: 700;
-  line-height: 1.45;
   margin: 0;
 }
 
-.preorder-message p + p {
-  margin-top: 4px;
+.preorder-kicker {
+  font-size: clamp(21px, 2vw, 28px);
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.preorder-support {
+  color: var(--muted);
+  font-size: clamp(15px, 1.35vw, 18px);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 8px;
 }
 
 .lead-form {
