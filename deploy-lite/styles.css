@@ -629,9 +629,16 @@ h2 {
 }
 
 .model-tabs {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 10px auto 0;
-  max-width: 960px;
+  max-width: min(1240px, calc(100vw - 40px));
+  overflow-x: auto;
+  padding: 2px 2px 8px;
+  scrollbar-width: none;
+}
+
+.model-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .model-tab {
@@ -640,11 +647,13 @@ h2 {
   border-radius: 999px;
   color: var(--muted);
   font-family: var(--font-en);
-  font-size: 12px;
+  flex: 0 0 auto;
+  font-size: clamp(9px, 0.72vw, 12px);
   font-weight: 700;
   min-height: 30px;
-  padding: 0 14px;
+  padding: 0 clamp(8px, 0.9vw, 14px);
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+  white-space: nowrap;
 }
 
 .model-tab:hover {

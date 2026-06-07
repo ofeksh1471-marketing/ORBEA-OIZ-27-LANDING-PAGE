@@ -44,9 +44,10 @@ if ("IntersectionObserver" in window) {
 
 const models = [
   { name: "Oiz M-LTD", image: "assets/media/OIZ M-LTD.jpg" },
+  { name: "Oiz M-LTD Flight Attendant", image: "assets/media/Oiz M-LTD Flight Attendant.jpg" },
   { name: "Oiz M-Team FACTORY", image: "assets/media/OIZ M-TEAM FACTORY.jpg" },
   { name: "Oiz M-PRO", image: "assets/media/OIZ M-PRO.jpg" },
-  { name: "Oiz M10 AXS", image: "assets/media/Oiz M10 AXS.jpg" },
+  { name: "Oiz M10 AXS Flight Attendant", image: "assets/media/Oiz M10 AXS.jpg" },
   { name: "Oiz M10", image: "assets/media/OIZ M10.jpg" },
   { name: "Oiz M20", image: "assets/media/OIZ M20.jpg" },
   { name: "Oiz M30", image: "assets/media/OIZ M30.jpg" },
